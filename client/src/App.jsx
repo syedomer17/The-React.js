@@ -1,6 +1,7 @@
 import React from 'react'
 import MyHobby from './components/MyHobby';
 import Food from './components/Food';
+import LikeButton from './components/LikeButton';
 
 const App = () => {
     const favoriteFood = "Pizza";
@@ -10,6 +11,7 @@ const App = () => {
       <p>My favorite food is {favoriteFood}</p>
       <MyHobby />
       <Food dish="pizza" rating = {5} />
+      <LikeButton />
     </div>
   )
 }
