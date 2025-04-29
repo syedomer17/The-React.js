@@ -2,6 +2,7 @@ import React from 'react'
 import MyHobby from './components/MyHobby';
 import Food from './components/Food';
 import LikeButton from './components/LikeButton';
+import ColorChanger from './components/ColorChanger';
 
 const App = () => {
     const favoriteFood = "Pizza";
@@ -12,6 +13,7 @@ const App = () => {
       <MyHobby />
       <Food dish="pizza" rating = {5} />
       <LikeButton />
+      <ColorChanger />
     </div>
   )
 }
