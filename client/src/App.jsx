@@ -4,6 +4,7 @@ import Food from './components/Food';
 import LikeButton from './components/LikeButton';
 import ColorChanger from './components/ColorChanger';
 import MovieTicket from './components/MovieTicket';
+import ToDoList from './components/ToDoList';
 
 const App = () => {
     const favoriteFood = "Pizza";
@@ -16,6 +17,7 @@ const App = () => {
       <LikeButton />
       <ColorChanger />
       <MovieTicket />
+      <ToDoList />
     </div>
   )
 }
