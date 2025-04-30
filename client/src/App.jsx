@@ -3,6 +3,7 @@ import MyHobby from './components/MyHobby';
 import Food from './components/Food';
 import LikeButton from './components/LikeButton';
 import ColorChanger from './components/ColorChanger';
+import MovieTicket from './components/MovieTicket';
 
 const App = () => {
     const favoriteFood = "Pizza";
@@ -14,6 +15,7 @@ const App = () => {
       <Food dish="pizza" rating = {5} />
       <LikeButton />
       <ColorChanger />
+      <MovieTicket />
     </div>
   )
 }
