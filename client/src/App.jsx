@@ -5,6 +5,7 @@ import LikeButton from './components/LikeButton';
 import ColorChanger from './components/ColorChanger';
 import MovieTicket from './components/MovieTicket';
 import ToDoList from './components/ToDoList';
+import LoginForm from './components/LoginForm';
 
 const App = () => {
     const favoriteFood = "Pizza";
@@ -18,6 +19,7 @@ const App = () => {
       <ColorChanger />
       <MovieTicket />
       <ToDoList />
+      <LoginForm />
     </div>
   )
 }
