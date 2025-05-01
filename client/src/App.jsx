@@ -6,6 +6,7 @@ import ColorChanger from './components/ColorChanger';
 import MovieTicket from './components/MovieTicket';
 import ToDoList from './components/ToDoList';
 import LoginForm from './components/LoginForm';
+import MouseTracker from './components/MouseTracker';
 
 const App = () => {
     const favoriteFood = "Pizza";
@@ -20,6 +21,7 @@ const App = () => {
       <MovieTicket />
       <ToDoList />
       <LoginForm />
+      <MouseTracker />
     </div>
   )
 }
