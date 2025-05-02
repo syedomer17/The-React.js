@@ -11,6 +11,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './components/Home';
 import Profile from './components/Profile';
 import User from './components/User';
+import Dashboard from './components/Dashboard';
 
 const App = () => {
     const favoriteFood = "Pizza";
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/user/:username" element={<User />} />
+        <Route path='/dashbord' element={<Dashboard />} />
       </Routes>
      </BrowserRouter>
     </div>
