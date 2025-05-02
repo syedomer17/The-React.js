@@ -7,21 +7,27 @@ import MovieTicket from './components/MovieTicket';
 import ToDoList from './components/ToDoList';
 import LoginForm from './components/LoginForm';
 import MouseTracker from './components/MouseTracker';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Home from './components/Home';
+import Profile from './components/Profile';
+import User from './components/User';
 
 const App = () => {
     const favoriteFood = "Pizza";
   return (
     <div>
-      <h1>Hello, React Developer!</h1>
-      <p>My favorite food is {favoriteFood}</p>
-      <MyHobby />
-      <Food dish="pizza" rating = {5} />
-      <LikeButton />
-      <ColorChanger />
-      <MovieTicket />
-      <ToDoList />
-      <LoginForm />
-      <MouseTracker />
+     <BrowserRouter>
+     <nav>
+     <Link to="/">Home</Link>
+        <Link to="/profile">Profile</Link>
+        <Link to="/user/johndoe">User: johndoe</Link>
+     </nav>
+     <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/user/:username" element={<User />} />
+      </Routes>
+     </BrowserRouter>
     </div>
   )
 }
