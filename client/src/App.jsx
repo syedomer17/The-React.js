@@ -8,6 +8,9 @@ import ToDoList from './components/ToDoList';
 import LoginForm from './components/LoginForm';
 import MouseTracker from './components/MouseTracker';
 import Ref from './components/Ref';
+import UserProvider from './components/contexHook/UserProvider';
+import UserGreeting from './components/contexHook/UserGreeting';
+import UserRole from './components/contexHook/UserRole';
 
 
 
@@ -16,6 +19,14 @@ const App = () => {
   return (
     <div>
       <Ref />
+      <div>
+        <UserProvider >
+          <div>
+            <UserGreeting />
+            <UserRole />
+          </div>
+        </UserProvider>
+      </div>
     </div>
   )
 }
