@@ -6,6 +6,7 @@ import UserRole from './components/contexHook/UserRole';
 import CounterComponent from './components/coustomHooks/CounterComponent';
 import Controlled from './components/Controlled-vs-Uncontrolled-Components/Controlled';
 import UnControlled from './components/Controlled-vs-Uncontrolled-Components/UnControlled';
+import SignUp from './components/form/SignUp';
 
 
 
@@ -29,6 +30,9 @@ const App = () => {
       <div>
         <Controlled />
         <UnControlled />
+      </div>
+      <div>
+        <SignUp />
       </div>
     </div>
   )
