@@ -35,14 +35,14 @@ const App = () => {
       <div>
         <SignUp />
       </div>
-      <div>
+      {/* <div>
         <Userprovider>
         <div className="p-6 max-w-md mx-auto">
         <UserInfo />
         <ToggleEvent />
       </div>
         </Userprovider>
-      </div>
+      </div> */}
     </div>
   )
 }
