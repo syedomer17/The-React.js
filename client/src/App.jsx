@@ -10,6 +10,7 @@ import SignUp from './components/form/SignUp';
 import { Userprovider } from './components/context2.0/UserCon';
 import UserInfo from './components/context2.0/UserInfo';
 import LikeButton from './components/Redux/LikeButton';
+import ToggleSwitchToggleSwitch from './components/Reducer/ToggleSwitchToggleSwitch';
 
 
 
@@ -46,6 +47,9 @@ const App = () => {
       </div> */}
       <div>
         <LikeButton />
+      </div>
+      <div>
+        <ToggleSwitchToggleSwitch />
       </div>
     </div>
   )

@@ -7,7 +7,7 @@ const initialSate = {
 export const likeReducer = (state = initialSate,action) => {
     switch(action.type){
         case LIKE_POST:
-            return {...state,likes:state.likes + 1};
+            return {...state,likes:Math.max(1,state.likes + 1)};
         case UNLIKE_POST:
             return {...state,likes:Math.max(0,state.likes - 1)};
         default:
