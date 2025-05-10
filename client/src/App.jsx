@@ -16,6 +16,7 @@ import ParentComponent from './components/UseImperativeHandle/ParentComponent';
 import ResizableBox from './components/useLayoutEffect/ResizableBox';
 import Modal from './components/React-Portals/Modal';
 import { useSelector } from 'react-redux';
+import ParentInput from './components/Forward-Refs/ParentInput';
 
 
 
@@ -81,6 +82,9 @@ const App = () => {
           <p>This modal is rendered using a portal 🚀</p>
         </Modal>
       )}
+    </div>
+    <div>
+      <ParentInput />
     </div>
     </div>
   )
