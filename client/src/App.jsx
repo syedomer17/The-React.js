@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Ref from './components/Ref';
 import UserProvider from './components/contexHook/UserProvider';
 import UserGreeting from './components/contexHook/UserGreeting';
@@ -14,11 +14,15 @@ import ToggleSwitchToggleSwitch from './components/Reducer/ToggleSwitchToggleSwi
 import SlowCountComponent from './components/Memo/SlowCountComponent';
 import ParentComponent from './components/UseImperativeHandle/ParentComponent';
 import ResizableBox from './components/useLayoutEffect/ResizableBox';
+import Modal from './components/React-Portals/Modal';
+import { useSelector } from 'react-redux';
 
 
 
 const App = () => {
     const favoriteFood = "Pizza";
+
+    const [isOpen,setIsOpen]  = useState(false);
   return (
     <div>
       <Ref />
@@ -63,6 +67,21 @@ const App = () => {
       <div>
         <ResizableBox />
       </div>
+     <div className="p-6">
+      <button
+        onClick={() => setIsOpen(true)}
+        className="bg-blue-600 text-white px-4 py-2 rounded"
+      >
+        Open Modal
+      </button>
+
+      {isOpen && (
+        <Modal onClose={() => setIsOpen(false)}>
+          <h2 className="text-xl font-semibold mb-2">Hello from Modal!</h2>
+          <p>This modal is rendered using a portal 🚀</p>
+        </Modal>
+      )}
+    </div>
     </div>
   )
 }
