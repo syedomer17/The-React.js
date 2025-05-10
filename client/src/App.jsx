@@ -25,7 +25,7 @@ const App = () => {
 
     const [isOpen,setIsOpen]  = useState(false);
 
-    const timeComponent = withTimer(SimpleComponent)
+    const TimedComponent = withTimer(SimpleComponent);
   return (
     <div>
       <Ref />
@@ -88,8 +88,8 @@ const App = () => {
     <div>
       <ParentInput />
     </div>
-    <div>
-      <timeComponent />
+    <div className="p-6">
+      <TimedComponent />
     </div>
     </div>
   )

@@ -1,13 +1,14 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 
-const withTimer = (wrappedComponent) => {
-    return(props) => {
-        useEffect(()=>{
-            const now = new Date().toLocaleTimeString();
-            console.log(`[withTimer] Component mounted at: ${now}`)
-        },[])
-    }
-    return <wrappedComponent {...props} />
-}
+const withTimer = (WrappedComponent) => {
+  return (props) => {
+    useEffect(() => {
+      const now = new Date().toLocaleTimeString();
+      console.log(`[withTimer] Component mounted at: ${now}`);
+    }, []);
 
-export default withTimer
+    return <WrappedComponent {...props} />;
+  };
+};
+
+export default withTimer;
