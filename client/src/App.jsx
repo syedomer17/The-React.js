@@ -13,6 +13,7 @@ import LikeButton from './components/Redux/LikeButton';
 import ToggleSwitchToggleSwitch from './components/Reducer/ToggleSwitchToggleSwitch';
 import SlowCountComponent from './components/Memo/SlowCountComponent';
 import ParentComponent from './components/UseImperativeHandle/ParentComponent';
+import ResizableBox from './components/useLayoutEffect/ResizableBox';
 
 
 
@@ -58,6 +59,9 @@ const App = () => {
       </div>
       <div>
         <ParentComponent />
+      </div>
+      <div>
+        <ResizableBox />
       </div>
     </div>
   )
