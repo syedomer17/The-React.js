@@ -17,13 +17,15 @@ import ResizableBox from './components/useLayoutEffect/ResizableBox';
 import Modal from './components/React-Portals/Modal';
 import { useSelector } from 'react-redux';
 import ParentInput from './components/Forward-Refs/ParentInput';
-
-
+import withTimer from "./components/HOC/withTimer"
+import SimpleComponent from "./components/HOC/SimpleComponent"
 
 const App = () => {
     const favoriteFood = "Pizza";
 
     const [isOpen,setIsOpen]  = useState(false);
+
+    const timeComponent = withTimer(SimpleComponent)
   return (
     <div>
       <Ref />
@@ -85,6 +87,9 @@ const App = () => {
     </div>
     <div>
       <ParentInput />
+    </div>
+    <div>
+      <timeComponent />
     </div>
     </div>
   )
